@@ -147,6 +147,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translateY(-15px);
+
+}
+.why-ans:hover{
+    transform: translateY(10px);
+    box-shadow: 0 0 15px 15px grey;
+    transition: transform 0.8s, box-shadow 0.3s, background-color 0.3s;
 }
     h2{
         color: gold;
@@ -197,7 +204,12 @@ body {
         color: white;
     }
 
+.review:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0 15px 15px grey;
+    transition: transform 0.5s ease-in, box-shadow 0.3s, background-color 0.3s;
 
+}
 
 
 footer{
