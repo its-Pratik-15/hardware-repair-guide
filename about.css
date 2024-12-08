@@ -60,10 +60,15 @@
     display:none;
     background-color:#202020 ;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: auto;
     align-items: center;
     padding: 20px;
+}
+.dropdown-menu li a {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
 }
 .about-item{
     color: white;

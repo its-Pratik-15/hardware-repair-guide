@@ -70,7 +70,7 @@ body {
     display:none;
     background-color:#202020 ;
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: auto;
     align-items: center;
     padding: 20px;
@@ -90,7 +90,7 @@ body {
 
 #head {
     text-align: center;
-    background-color: yellow;
+    background-color: lightgreen;
     color: rgb(195, 188, 188);
     padding: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -162,7 +162,7 @@ body {
     margin: 15px 0;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(143, 138, 138);
+    color: lightgreen;
 }
 
 .tool-card p {
