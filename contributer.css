@@ -47,7 +47,7 @@ body {
 
 }
 
-.navbar .nav-links li a {
+.navbar .nav-links li a{
     color: white;
     text-decoration: none;
     font-size: 24px;
@@ -79,9 +79,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
-.about-item{
-    color: white;
-}
+
 #services{
     display: none;
 }
@@ -117,6 +115,19 @@ body {
     border-radius: 50px;
     margin-top: 40px;
     padding: 5px;
+}
+.contributer-item ul li a{
+    color: #fff;
+}
+.contributer ul li{
+    list-style: none;
+    font-size: 24px;
+}
+.contributer-item ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
 }
 
 .contributer-item img:hover {
@@ -224,12 +235,13 @@ footer{
     }
     .contributer{
         flex-direction: column;
-        height: 2000px;
-
-        padding-top: 65px;
-        width: 450px;
+        justify-content: center;
+        align-items: center;
+        height: 2150px;
+        
     }
     .contributer-item{
+        margin-top: 130px;
         width: 300px;
     }
     footer {
@@ -249,3 +261,11 @@ footer{
 
 
 }
+@media screen and (max-width: 364px){
+    footer{
+        display: none;
+    }
+
+}
+    
+
