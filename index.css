@@ -153,12 +153,14 @@ body {
     align-items: center;
     justify-content: center;
     transform: translateY(-15px);
+    transition: transform 0.5s,box-shadow 0.9s;
 
 }
 .why-ans:hover{
     transform: translateY(10px);
-    box-shadow: 0 0 15px 15px grey;
-    transition: transform 0.9s,box-shadow 0.9s;
+    box-shadow: 0 0 15px 15px rgb(71,70,70);
+    background-color: rgb(41,40,40);
+
 }
     h2{
         color: gold;
@@ -201,6 +203,7 @@ body {
     padding: 50px;
     font-size: 30px;
     text-align: center;
+    transition: transform 0.5s,box-shadow 0.9s;
 }
     h3{
         color: goldenrod;
@@ -211,8 +214,9 @@ body {
 
 .review:hover{
     transform: translateY(-15px);
-    box-shadow: 0 0 15px 15px grey;
+    box-shadow: 0 0 15px 15px rgb(71,70,70);
     transition: transform 1s ease-in-out;
+    background-color: rgb(41,40,40);
 
 }
 
