@@ -162,10 +162,12 @@ body {
 
 .image-container {
     margin-bottom: 20px;
+    box-shadow: 0 24px 20px rgba(0, 0, 0, 0.3);
 }
 
 .image-container img {
     width: 200px;
+    
 }
 
 .title {
