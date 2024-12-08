@@ -57,6 +57,7 @@ body {
 
 
 
+
 .dropdown:hover .dropdown-menu{
     display: block;
 }
@@ -88,7 +89,6 @@ body {
     background-image:url(./resouses/bgimg.jpg);
     height: 100vh;
     width: 100vw;
-    background-size: cover;
     background-position: center;
     overflow: hidden;
 }
@@ -106,20 +106,114 @@ body {
     flex-wrap: wrap;
     flex: 1;
 }
-h1{
+.about-h1{
     margin-top: 90px;
    font-size: 100px; 
    color: #F0F8FF;
    margin-bottom: 40px;
 }
-p{
+.about-p{
     font-size: 50px;
     color: white;
 }
+.why-rap-for-repair{
+    background-image: linear-gradient(to right,#202020, rgb(0,0,0));
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.why-content{
+    color: white;
+    font-size: 30px;
+}
+.ans{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.why-ans{
+    height:350px;
+    width: 350px;
+    background-color: #333;
+    border-radius: 10%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-15px);
+
+}
+.why-ans:hover{
+    transform: translateY(10px);
+    box-shadow: 0 0 15px 15px grey;
+    transition: transform 0.8s, box-shadow 0.3s, background-color 0.3s;
+}
+    h2{
+        color: gold;
+        font-size: 40px;
+    }
+    p{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+#ans-3{
+    padding: 10px;
+}
+.grid-box{
+    background-image: linear-gradient(#000000, #101010, #303030	);
+    height: 90vh;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+
+}
+.review-h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    background-color: black;
+    height: 100px;
+    padding: 100px;
+
+}
+
+.review{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+    h3{
+        color: goldenrod;
+    }
+    p{
+        color: white;
+    }
+
+.review:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 0 15px 15px grey;
+    transition: transform 0.5s ease-in, box-shadow 0.3s, background-color 0.3s;
+
+}
+
 
 footer{
     display: flex;
-    background-color: white;
     color: black;
     height: 100px;
     align-items: center;
