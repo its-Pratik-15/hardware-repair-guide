@@ -15,11 +15,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
     background-color: 	#202020;
     padding: 15px;
-    width: 100vw;
     z-index: 100;
     
+}
+.menu{
+    display: none;
 }
 
 .navbar .logo img{
@@ -92,6 +95,7 @@ body {
 }
 .about{
     background-image:url(./resouses/bgimg.jpg);
+    background-size: cover; 
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -102,7 +106,6 @@ body {
     margin-top: 70px;
     height: 80em;
     width: 80em;
-
     backdrop-filter: blur(3px);
     text-align: center;
     display: flex;
@@ -256,4 +259,146 @@ footer{
 .social-icons a:hover {
     color: brown;
 }
+@media screen and (max-width: 768px) {
 
+    .navbar .nav-links{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .menu-item{
+        width: 80px;
+        text-align: center;
+        margin-right: 30px;
+    }
+    .menu-dropdown{
+        display: none;
+        background-color:#202020 ;
+        position: absolute;
+        right: auto;
+        text-align: center;
+        border: 10px solid #202020;
+        width: 150px;
+        right: 15px;
+        
+    }
+    .menu-dropdown li{
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    
+    .menu-dropdown li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu:hover .menu-dropdown{
+        display: block;
+        color: lightgreen;
+
+    }
+    .menu-dropdown:active{
+        display: block;
+    }
+
+    .menu li{
+        list-style: none;
+    }
+    .dropdown{
+        text-align: center;
+    }
+    .dropdown-menu{
+        right: 120px;
+        top: 200px;
+        width: 150px;
+    }
+    
+    .about{
+        height: 600px;
+    }
+    .about-h1 {
+        font-size: 40px;
+    }
+
+    .about-p {
+        font-size: 20px;
+    }
+
+    .about-content {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .why-rap-for-repair {
+        padding: 30px 10px;
+        height: 1000px;
+    }
+
+    .why-content {
+        font-size: 24px;
+        margin-bottom: 30px;
+        height: 600px;
+
+    }
+
+    .ans {
+        display:flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .why-ans {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .grid-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        gap: 20px;
+        padding: 20px;
+        height: 2000px;
+    }
+
+    .review {
+        font-size: 16px;
+        padding: 20px;
+        width: 90%;
+    }
+        h3{
+            font-size: 30px;
+        }
+    .review-h3{
+        padding: 0px;
+        padding-left: 10px;
+    }
+
+    footer {
+        padding: 20px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .social-icons {
+        justify-content: center;
+    }
+
+    footer .social-icons li {
+
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 364px){
+    footer{
+        display: none;
+    }
+    .grid-box{
+        height: 2200px;
+    }
+
+}

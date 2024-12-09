@@ -75,6 +75,9 @@ body {
     align-items: center;
     padding: 20px;
 }
+.menu{
+    display: none;
+}
 .about-item{
     color: white;
 }
@@ -170,4 +173,63 @@ body {
     padding: 0 15px;
     color: #b2abab;
     line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+
+    .navbar .nav-links{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .menu-item{
+        width: 80px;
+        text-align: center;
+        margin-right: 30px;
+    }
+    .menu-dropdown{
+        display: none;
+        background-color:#202020 ;
+        position: absolute;
+        right: auto;
+        text-align: center;
+        border: 10px solid #202020;
+        width: 150px;
+        right: 15px;
+        
+    }
+    .menu-dropdown li{
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    
+    .menu-dropdown li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .menu:hover .menu-dropdown{
+        display: block;
+        color: lightgreen;
+
+    }
+    .menu-dropdown:active{
+        display: block;
+    }
+
+    .menu li{
+        list-style: none;
+    }
+    .dropdown{
+        text-align: center;
+    }
+    .dropdown-menu{
+        right: 120px;
+        top: 200px;
+        width: 150px;
+    }
 }
